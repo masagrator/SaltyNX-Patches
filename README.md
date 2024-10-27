@@ -11,7 +11,7 @@ Some useful asm64 patches for SaltyNX. They must be put to `SaltySD/patches/` fo
 
 `All listed patches should be copied to not cause issues.`
 
-[nn::oe::SetCopyrightVisibility](BlockCopyrightImage/_ZN2nn2oe22SetCopyrightVisibilityEb.asm64) - this function sets if copyright image should be visible or not.
+[nn::oe::SetCopyrightVisibility](BlockCopyrightImage/_ZN2nn2oe22SetCopyrightVisibilityEb.asm64) - this function sets if copyright image should be visible or not. Blocking this only is not enough because image is set to "visible" after using nn::oe::InitializeCopyrightFrameBuffer()
 
 [nn::oe::SetCopyrightImage](BlockCopyrightImage/_ZN2nn2oe17SetCopyrightImageEPKvmiiiiNS0_16WindowOriginModeE.asm64) - this function accepts image and where to put it.
 
