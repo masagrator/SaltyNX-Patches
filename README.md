@@ -19,4 +19,4 @@ Some useful asm64/asm32 patches for SaltyNX. They must be put to `SaltySD/patche
 
 > Block internet access
 
-**nn::nifm::IsNetworkAvailable**:[asm64](BlockUpdatingClocks/_ZN2nn4nifm18IsNetworkAvailableEv.asm64)/[asm32](BlockUpdatingClocks/_ZN2nn4nifm18IsNetworkAvailableEv.asm32) - If game is using this function to check if you are connected to internet, it returns information that you are not.
+**nn::nifm::IsNetworkAvailable**:[asm64](BlockUpdatingClocks/_ZN2nn4nifm18IsNetworkAvailableEv.asm64)/[asm32](BlockUpdatingClocks/_ZN2nn4nifm18IsNetworkAvailableEv.asm32) - If game is using this function to check if you are connected to internet, patch returns information that you are not.
