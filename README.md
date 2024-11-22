@@ -1,5 +1,5 @@
 # SaltyNX-Patches
-Some useful asm64 patches for SaltyNX. They must be put to `SaltySD/patches/` folder. If you want to use it for specific game, put it into titleid folder, f.e. `SaltySD/patches/0100000000010000/`. Don't rename asm64 files, those names are important.
+Some useful asm64/asm32 patches for SaltyNX. They must be put to `SaltySD/patches/` folder. If you want to use it for specific game, put it into titleid folder, f.e. `SaltySD/patches/0100000000010000/`. Don't rename asm64 files, those names are important.
 
 > Block updating clocks
 
