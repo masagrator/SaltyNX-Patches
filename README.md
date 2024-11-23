@@ -15,7 +15,7 @@ Some useful asm64/asm32 patches for SaltyNX. They must be put to `SaltySD/patche
 
 **nn::oe::SetCopyrightImage**:[asm64](BlockCopyrightImage/_ZN2nn2oe17SetCopyrightImageEPKvmiiiiNS0_16WindowOriginModeE.asm64)/[asm32](BlockCopyrightImage/_ZN2nn2oe17SetCopyrightImageEPKvmiiiiNS0_16WindowOriginModeE.asm32) - this function accepts image and where to put it.
 
-**nn::oe::InitializeCopyrightFrameBuffer**:[asm64](BlockCopyrightImage/_ZN2nn2oe30InitializeCopyrightFrameBufferEPvm.asm64)/[asm32](BlockCopyrightImage/_ZN2nn2oe30InitializeCopyrightFrameBufferEPvm.asm32) - this function accepts buffer to use for storing image and other data necessary for copyright image.
+**nn::oe::InitializeCopyrightFrameBuffer**:[asm64](BlockInternetAccess/_ZN2nn2oe30InitializeCopyrightFrameBufferEPvm.asm64)/[asm32](BlockInternetAccess/_ZN2nn2oe30InitializeCopyrightFrameBufferEPvm.asm32) - this function accepts buffer to use for storing image and other data necessary for copyright image.
 
 > Block internet access
 
