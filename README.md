@@ -20,3 +20,7 @@ Some useful asm64/asm32 patches for SaltyNX. They must be put to `SaltySD/patche
 > Block internet access
 
 **nn::nifm::IsNetworkAvailable**:[asm64](BlockInternetAccess/_ZN2nn4nifm18IsNetworkAvailableEv.asm64)/[asm32](BlockInternetAccess/_ZN2nn4nifm18IsNetworkAvailableEv.asm32) - If game is using this function to check if you are connected to internet, patch returns information that you are not.
+
+> Block suspending game
+
+**nn::oe::SetFocusHandlingMode**:[asm64](BlockSuspending/_ZN2nn2oe20SetFocusHandlingModeENS0_17FocusHandlingModeE.asm64)/[asm32](BlockSuspending/_ZN2nn2oe20SetFocusHandlingModeENS0_17FocusHandlingModeE.asm32) - Block game from changing Focus Handling Mode to something else than "Never pause game in home menu". Helpful in games that disconnect you from server if you go to Home Menu.
