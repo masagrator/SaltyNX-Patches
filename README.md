@@ -23,4 +23,4 @@ Some useful asm64/asm32 patches for SaltyNX. They must be put to `SaltySD/patche
 
 > Block suspending game
 
-**nn::oe::SetFocusHandlingMode**:[asm64](BlockSuspending/_ZN2nn2oe20SetFocusHandlingModeENS0_17FocusHandlingModeE.asm64)/[asm32](BlockSuspending/_ZN2nn2oe20SetFocusHandlingModeENS0_17FocusHandlingModeE.asm32) - Block game from changing Focus Mode to something else than "Never pause game in home menu". Helpful in games that disconnect you from server if you go to Home Menu.
+**nn::oe::SetFocusHandlingMode**:[asm64](BlockSuspending/_ZN2nn2oe20SetFocusHandlingModeENS0_17FocusHandlingModeE.asm64)/[asm32](BlockSuspending/_ZN2nn2oe20SetFocusHandlingModeENS0_17FocusHandlingModeE.asm32) - Block game from changing Focus Handling Mode to something else than "Never pause game in home menu". Helpful in games that disconnect you from server if you go to Home Menu.
