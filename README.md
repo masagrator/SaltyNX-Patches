@@ -24,3 +24,7 @@ Some useful asm64/asm32 patches for SaltyNX. They must be put to `SaltySD/patche
 > Block suspending game
 
 **nn::oe::SetFocusHandlingMode**:[asm64](BlockSuspending/_ZN2nn2oe20SetFocusHandlingModeENS0_17FocusHandlingModeE.asm64)/[asm32](BlockSuspending/_ZN2nn2oe20SetFocusHandlingModeENS0_17FocusHandlingModeE.asm32) - Block game from changing Focus Handling Mode to something else than "Never pause game in home menu". Helpful in games that disconnect you from server if you go to Home Menu.
+
+> Block calling network error applet
+
+**nn::nifm::PrepareHandlingNetworkRequestResult**:[asm64](BlockNetworkErrorHandling/_ZN2nn4nifm35PrepareHandlingNetworkRequestResultENS0_13RequestHandleEPNS_6applet19LibraryAppletHandleE.asm64)/[asm32](BlockNetworkErrorHandling/_ZN2nn4nifm35PrepareHandlingNetworkRequestResultENS0_13RequestHandleEPNS_6applet19LibraryAppletHandleE.asm32) - This function is used to generate an applet handle that is later used to call an applet that shows what network error game/nnSDK found. By returning error for this function we block creating handle and force anything that called it to immediately return. This way we don't get any network error popup, no memory leak and no handle exhaustion.
