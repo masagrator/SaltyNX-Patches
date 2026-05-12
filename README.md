@@ -28,3 +28,7 @@ Some useful asm64/asm32 patches for SaltyNX. They must be put to `SaltySD/patche
 > Block calling network error applet
 
 **nn::nifm::PrepareHandlingNetworkRequestResult**:[asm64](BlockNetworkErrorHandling/_ZN2nn4nifm35PrepareHandlingNetworkRequestResultENS0_13RequestHandleEPNS_6applet19LibraryAppletHandleE.asm64)/[asm32](BlockNetworkErrorHandling/_ZN2nn4nifm35PrepareHandlingNetworkRequestResultENS0_13RequestHandleEPNS_6applet19LibraryAppletHandleE.asm32) - This function is used to generate an applet handle that is later used to call an applet that shows what network error game/nnSDK found. By returning error for this function we block creating handle and force anything that called it to immediately return. This way we don't get any network error popup, no memory leak and no handle exhaustion.
+
+> Block calling error applet
+
+**nn::err::ShowError(nn::Result)**:[asm64](BlockErrorApplet/_ZN2nn3err9ShowErrorENS_6ResultE.asm64)/[asm32](BlockErrorApplet/_ZN2nn3err9ShowErrorENS_6ResultE.asm32) - This specific variant of ShowError function is called by some network functions in nnSDK to show an error, f.e. 2155-8007. This patch blocks showing it.
